@@ -61,6 +61,7 @@ for i in range(len(delta)):
             final_matches.append(matchess[i][bigs[i][j]])
             break
     img3 = cv.drawMatches(im1,kp1,im2s[i],kp2s[i],final_matches,None,flags=cv.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
+    cv.imwrite('results/' + str(i) + '.png', img3)
     cv.imshow('frame', img3)
     if cv.waitKey(1000) & 0xFF == ord('q'):
         break
