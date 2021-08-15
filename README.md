@@ -15,19 +15,28 @@ We evaluated the performance of the fundamental matrix with a shaky video sequen
 We looked at images that were 1, 2, 5, 10, 20, and 40 frames apart. The larger the difference the further away the helicopter has moved from it's original location. The hope is that the pixel points corresponding to the helicopter will break the epipolar constraint the most (be far away from 0).
 
 ### 1 Frame Apart
+The helicopter point corresponded to the points that gave the 6th largest epipolar constraint value.
 ![Screenshot](results/0.png)
 
 ### 2 Frames Apart
+The helicopter point corresponded to the points that gave the 149th largest epipolar constraint value.
 ![Screenshot](results/1.png)
 
 ### 5 Frames Apart
+The helicopter point corresponded to the points that gave the 119th largest epipolar constraint value.
 ![Screenshot](results/2.png)
 
 ### 10 Frames Apart
+The helicopter point corresponded to the points that gave the 131st largest epipolar constraint value.
 ![Screenshot](results/3.png)
 
 ### 20 Frames Apart
+The helicopter point corresponded to the points that gave the 43rd largest epipolar constraint value.
 ![Screenshot](results/4.png)
 
 ### 40 Frames Apart
+The helicopter point corresponded to the points that gave the 32nd largest epipolar constraint value.
 ![Screenshot](results/5.png)
+
+### Analysis
+We see a trend with exception to when it is 1 frame apart that as the helicopter is further away from it's original point it will be one of the points with higher epipolar constraint values. Also, if we just looked above the horizon the helicopter is conistently the first point with the highest epipolar constraint value. This method can be used to find moving points of interest. 
